@@ -1,20 +1,15 @@
 # gulp-md5-plus
 
-> md5 plugin for [gulp](https://github.com/wpfpizicai/gulp-md5-plus) ,md5 the static files(eg javascript style image files) ;then replace the filenames in css or the html if needed by passing the file or dir in the second parameter
+> fork from [gulp-md5-plus](https://github.com/wpfpizicai/gulp-md5-plus) ,but edited some code those handling md5 files' relation with src files. 
 
 ## Usage
 
+publish it as your own node_module.
 
-First, install `gulp-md5-plus` as a development dependency:
-
-```shell
-npm install --save-dev gulp-md5-plus
-```
-
-Then, add it to your `gulpfile.js`:
+add it to your `gulpfile.js`:
 
 ```javascript
-var md5 = require("gulp-md5-plus");
+var md5 = require("@xxxxx/gulp-md5-plus");
 
 gulp.src("./src/*.css")
 	.pipe(md5(10,'./output/index.html'))
